@@ -1,0 +1,36 @@
+Protokoll Versuch 1
+Anzahl Wellenform auf 1
+Picoscope setting datei öffnen
+
+Mittelwert notieren:
+
+Mittelwert muss positiv sein
+
+cm			mV
+Messwert	Mittelwert
+10			1349
+13			1188
+16			1059
+19			942,3
+22			868,3
+25			805,7
+28			749,2
+31			690,5
+34			651,1
+37			629,9
+40			595,2
+43			553,9
+46			535,3
+49			516,3
+52			476,8
+55			458,3
+58			439,6
+61			438,7
+64			418,0
+67			417,2
+70			397,4			
+
+DIN A4
+29,7		704,3
+21			862,7
+
