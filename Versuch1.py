@@ -1,6 +1,7 @@
 import os
 
 import numpy as np
+from matplotlib import pyplot as plt
 
 mean_list = None
 std_list = None
@@ -36,6 +37,19 @@ def read_data():
         # print(f"{i} {std}")
         mean_list.append(mean)
         std_list.append(std)
+    # plot the mean data with matplotlib
+    # Create a plot
+    voltage = np.array(range(10, 71, 3))
+
+    plt.figure(figsize=(10, 6))
+    plt.plot(voltage, mean_list, marker='o', linestyle='-', color='b')
+    plt.title('Mean Data from CSV Files')
+    plt.xlabel('Distance')
+    plt.ylabel('Voltage')
+    plt.xticks(voltage)  # Set x-ticks to match column indices
+    plt.yticks(np.arange(0.3, 1.4, 0.1))  # Set y-ticks
+    plt.grid(True)
+    plt.show()
     return
 
 
