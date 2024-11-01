@@ -52,7 +52,53 @@ def read_data():
     plt.show()
     return
 
+def regression():
+    distance = np.array(range(10, 71, 3))
+
+    log_distance = np.log(distance)
+    log_mean = np.log(mean_list)
+    # plot the log data with matplotlib
+
+    plt.figure(figsize=(10, 6))
+    plt.plot(log_distance, log_mean, marker='o', linestyle='-', color='b')
+    plt.title('Mean Data from CSV Files')
+    plt.xlabel('Log Distance')
+    plt.ylabel('Log Voltage')
+    plt.grid(True)
+    plt.show()
+
+    numerator = 0
+    for i in range(len(log_distance)):
+        numerator += (log_distance[i] - np.mean(log_distance)) * (log_mean[i] - np.mean(log_mean))
+    denominator = 0
+    for i in range(len(log_distance)):
+        denominator += (log_distance[i] - np.mean(log_distance)) ** 2
+    a = numerator / denominator
+    b = np.mean(log_mean) - a * np.mean(log_distance)
+
+    regression = a * distance + b
+
+    # plot the log data with matplotlib
+    # plot the mean data with matplotlib
+    # Create a plot
+    distance = np.array(range(10, 71, 3))
+
+    # Calculate the corresponding y-values for the line y = a * x + b
+    # Plot the regression line
+    plt.plot(distance, regression, color='r', label=f'Fit Line: y = {a:.2f}x + {b:.2f}')
+
+    # plot the log data with matplotlib
+
+    plt.figure(figsize=(10, 6))
+    plt.plot(log_distance, log_mean, marker='o', linestyle='-', color='b')
+    plt.title('Mean Data from CSV Files')
+    plt.xlabel('Log Distance')
+    plt.ylabel('Log Voltage')
+    plt.grid(True)
+    plt.show()
+
 
 # call read_data() in main
 if __name__ == "__main__":
     read_data()
+    regression()
