@@ -10,13 +10,14 @@ def read_data():
     if not path:
         raise ValueError("DATA_PATH environment variable is not set")
 
-    data = []
+    local_data = np.array([])
     for i in range(10, 71, 3):
-        data.append(np.genfromtxt(f"{path}\\V1_{i}.csv", delimiter=";", skip_header=1000))
-    return data
+        local_data = np.append(local_data, np.genfromtxt(f"{path}\\V1_{i}.csv", delimiter=";", skip_header=1000, skip_footer=1, dtype=float))
+    return local_data
 
 
 # call read_data() in main
 if __name__ == "__main__":
     data = read_data()
     print(data)
+    print(data.shape)
