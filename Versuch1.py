@@ -15,18 +15,16 @@ def read_data():
     data_list = []  # list to store the data from each file
     for i in range(10, 71, 3):
         # Replace the German decimal comma with a dot and remove separators
-        csv_data = np.genfromtxt(f"{path}\\V1_{i}.csv", delimiter=";", skip_header=1000, skip_footer=1, dtype=str, converters=converters)
+        csv_data = np.genfromtxt(f"{path}\\V1_{i}.csv", delimiter=";", skip_header=1000, skip_footer=1, dtype=float, converters=converters)
         data_list.append(csv_data)
 
-    local_data = np.vstack(data_list)
+    local_data = np.concatenate(data_list)
     return local_data
 
 
 # call read_data() in main
 if __name__ == "__main__":
     data = read_data()
-    #print(data)
+    print(data)
     # print first 5 rows and columns
-    print(data[:5, :5])
-
     print(data.shape)
