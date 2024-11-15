@@ -1,0 +1,24 @@
+- höhere Auflösung einstellen
+- verlustfreies Dateiformat verwenden
+- nicht nötig bis Kante zu gehen
+
+- konstante Beleuchtung
+- Logitech webcam software
+
+10 dunkle Bilder, 10 helle, 1 Grauwert
+
+Belichtungsparameter:
+frame width: 960.0
+frame height: 544.0
+--------------------------------
+brightness: 128.0
+contrast: 32.0
+saturation: 32.0
+--------------------------------
+gain: 0.0
+exposure: -6.0
+--------------------------------
+white balance: 1.0
+
+Entfernung zwischen Kamera und Testbild
+Höhe bis zum Webcamgehäuse: 30,5 cm
