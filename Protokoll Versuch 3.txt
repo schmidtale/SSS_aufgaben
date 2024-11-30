@@ -1,0 +1,41 @@
+Teil 1:
+Mundharmonika zukleben mit Tesa
+Ton messen
+anhalten
+als csv speichern
+
+Unterschiede: Tonlage, verwendetes Loch
+
+Teil 2:
+auf Kanal B anschließen beim Picoscope
+Funktionsgenerator soll Sinusschwingung generieren
+langes Kabel von Generator auf Kanal A Picoscope
+oben schwarz, unten rot
+Mikrofon davor stellen, nahe dran aber nicht berühren
+
+neue Picoscope Datei laden
+
+Funktionsgenerator
+2 von oben Frequenz
+Frequenz rot, cursor unter Drehrad links und rechts verschieben, Rad hochdrehen
+3 von oben Amplitude
+
+verstellen mit Rad
+
+gelber Schalter Ausgang freischalten
+
+Generator: Sinus, u1ss = 1.5 V
+Frequenzen: f = 100, 200, 300, 400, 500, 700, 850 Hz, 1, 1.2, 1.5, 1.7, 2 kHz, 3, 4, 5, 6, 10 kHz
+
+mit Schalter ein- und ausschalten
+
+Messung anhalten
+Messdaten notieren
+Frequenz Spannung Spitze-Spitze A Spitze-Spitze B Phasenverschiebung
+Phasenverschiebung: Linien verschieben
+Maximum bis Maximum
+von Sinus und Mikrofon
+delta t
+leichte Verschiebung
+
+von blau nach rot
